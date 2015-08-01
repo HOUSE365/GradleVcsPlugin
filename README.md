@@ -2,12 +2,15 @@
 # GradleVcsPlugin
 Gradle plugin used to download source code from the Version Control System.
 
+类似项目:
+>  [gradle-scm-plugin](https://github.com/nebula-plugins/gradle-scm-plugin)
+
 
 >***警告:***该项目为初始开发阶段.
 
 
 
-**描述:**
+**目的:**
 
 >     用于在持续构建过程中的从VCS(包括Git,Subversion,Mercurial)上下载源码,并生成ChangeLog与VcsInfo信息.
 >     ChangeLog:
