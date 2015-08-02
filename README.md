@@ -1,21 +1,39 @@
-
-# GradleVcsPlugin
-Gradle plugin used to download source code from the Version Control System.
-
-类似项目:
->  [gradle-scm-plugin](https://github.com/nebula-plugins/gradle-scm-plugin)
+Welcome to GradleVcsPlugin!
+===================
 
 
->***警告:***该项目为初始开发阶段.
+**Gradle plugin** used to download source code from the **Version Control System**（**SCM**，***Source Code Management***）.
+
+>***警告:***该项目为初始阶段.
+
+----------
+
+
+描述
+-------------
+
+该插件用于为基于Gradle的Android Studio项目提供构建过程中的源码下载支持。
+
+
+ - 为Daily Build准备最新的源码，并记录与之相关的仓库、分支、版本、更改记录等信息。
+ - 根据指定的Daily Build的源码信息重新准备与之相同的源码，用于Release Build/Variant Build。
 
 
 
-**目的:**
+> **类似项目:**
 
->     用于在持续构建过程中的从VCS(包括Git,Subversion,Mercurial)上下载源码,并生成ChangeLog与VcsInfo信息.
->     ChangeLog:
->         记录本次从VCS下载的源码距上次构建的所有更新日志.
->         方便测试及其他相关人员了解版本更改信息以及测试回归.
->     VcsInfo:
->         记录本次从VCS下载的源码的仓库路径,分支,版本等信息.
->         通过该文件可以完整重构本次构建过程所使用的源码,用于在当前构建的版本测试通过后构建正式版本以及其他衍生版本.
+> -  [gradle-scm-plugin](https://github.com/nebula-plugins/gradle-scm-plugin)
+
+> -  [gradle-release](https://github.com/researchgate/gradle-release)
+
+
+> -  [gradle-release-plugin ](https://github.com/ari/gradle-release-plugin)
+
+> -  [GradleVcsDependencyPlugin](https://github.com/alexvasilkov/GradleVcsDependencyPlugin)
+
+
+
+>**不是轮子:**
+
+> - 我们需要一个与Jenkins以及现有生产工具结合的构建/测试/发布工具链.主要目的是快速,简单的构建测试/正式/衍生版本.
+> - 目前内部已有基于ANT的相关实现,在向Android Studio迁移过程中需要将该实现转换为Gradle.以保持我们现有的研发体系与规则不变.
