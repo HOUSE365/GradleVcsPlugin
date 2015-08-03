@@ -22,7 +22,8 @@ Welcome to GradleVcsPlugin!
 
 > **类似项目:**
 
-> -  [gradle-scm-plugin](https://github.com/nebula-plugins/gradle-scm-plugin)
+> -  [Nebula](https://nebula-plugins.github.io/)这是一个比较健全且功能强大的插件组合,如果你有时间建议你使用该实现,他一定能满足你的需要.
+The nebula-plugins organization was setup to facilitate the generation, governance, and releasing of Gradle plugins. It is done by providing a space to host plugins, in SCM, CI, and a Repository. 
 
 > -  [gradle-release](https://github.com/researchgate/gradle-release)
 
